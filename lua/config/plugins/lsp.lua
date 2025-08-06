@@ -12,12 +12,8 @@ return {
     },
     config = function()
       require("lspconfig").lua_ls.setup {}
-
       require("lspconfig").ts_ls.setup {}
-      require("lspconfig").jsonls.setup {
-
-      }
-
+      require("lspconfig").jsonls.setup {}
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
